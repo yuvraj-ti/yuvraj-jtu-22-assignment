@@ -7,6 +7,9 @@ WORKDIR /yuvraj-jtu-22-assignment
 # Expose port 8000 for your FastAPI server.
 EXPOSE 8000
 
+#copying requiremments.txt in docker container
+COPY requirements.txt /yuvraj-jtu-22-assignment/requirements.txt
+
 # Install Python requirements using Pip.
 RUN pip install --no-cache-dir -r requirements.txt
 
